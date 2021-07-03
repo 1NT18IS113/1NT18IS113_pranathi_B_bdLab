@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+   <link rel="stylesheet" href="css/pass.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" style="height:50px;" >
+    <form class="container-fluid justify-content-start">
+      <button class="btn btn-outline-success me-2" type="button" style="width:49% ;color:white;font-size:15px;" onclick="window.location.href='pass.hbs'">Change Password</button>&nbsp;
+      <button class="btn btn-outline-success me-2" type="button"style="width:49%;color:white;font-size:15px;" onclick="window.location.href='login.hbs'" >Logout</button>
+    </form>
+  </nav>
+    <center>
+        <h1 style="font-size: 50px;">Attendance Report  </h1>
+        <h2 style="color: rgb(157, 243, 20);"><b>Attendance matters, Each Day, Every Day!</b></h2>
+        <br><br>
+        
+
+        {{#if message}}
+      <h2 style="color:rgb(142, 227, 238)">{{message}}</h2>
+  {{/if}}
+  {{#if message1}}
+      <h2 style="color:rgb(235, 17, 17)">{{message1}}</h2>
+  {{/if}}
+        <form action="/change" class="form" method="POST" >
+               <label for="stuname"><b><h3 style="color :rgb(224, 48, 101); font-size:30px;"> Username :</h3> </b></label>
+                <input type="text" id="ID" placeholder="Enter Username" name="stuname" required>
+                <br><br>
+                <label for="oldpsw"><b><h3 style="color :rgb(224, 48, 101); font-size:30px;"> Old Password : </h3></b></label>
+                <input type="password"  placeholder="Enter old password" name="oldpsw" required>
+                <br><br>
+                <label for="newpassword"><b><h3 style="color :rgb(224, 48, 101); font-size:30px;"> New Password : </h3></b></label>
+                <input type="password" placeholder="Enter new Password" name="newpassword" required>
+                  <br><br>
+                <button type="submit" id="change_student"> <h3 style="color :rgb(81, 90, 216); font-size:40px;">Submit</h3> </button>
+              </form>
+
+       
+       
+</center>
+</body>
+</html>
