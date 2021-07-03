@@ -1,0 +1,5 @@
+Attendance status report is an application that can be used to track the attendance status of students belonging to an institution. It provides two interfaces: 
+one for Teachers and other for Students. The teachers can either view the attendance of the class or update the attendance status by selecting an excel file. 
+The Format/template of excel file can be downloaded prior to taking attendance and then the same file can be uploaded. The students can view the attendance of the 
+enrolled subjects after logging in with valid credentials. Visualizations like bar chart and pie chart have been used for providing the user better visualization of 
+their attendance status.
